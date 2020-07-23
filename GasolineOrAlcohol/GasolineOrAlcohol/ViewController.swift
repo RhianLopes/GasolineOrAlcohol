@@ -23,13 +23,16 @@ class ViewController: UIViewController {
 
     @IBAction func calculate(_ sender: Any) {
         
-        let isValid = self.validateFields(gasolinePrice: gasolinePriceField, alcoholPrice: alcoholPriceField);
-        
-        if (isValid) {
-            
-        
-        } else {
-            
+        if let gasolinePrice = gasolinePriceField.text {
+            if let alcoholPrice = alcoholPriceField.text {
+                let isValid = validateFields(gasolinePrice: gasolinePrice, alcoholPrice: alcoholPrice);
+                
+                if (isValid) {
+                    calculateBestGas(gasolinePrice: gasolinePrice, alcoholPrice: alcoholPrice)
+                } else {
+                    bestGas.text = "INSIRA OS PREÇOS"
+                }
+            }
         }
     }
     
@@ -38,7 +41,9 @@ class ViewController: UIViewController {
             if let alcoholValue = Double(alcoholPrice) {
                 let value = alcoholValue / gasolineValue
                 if (value >= 0.7) {
-                    
+                    bestGas.text = "GASOLINA"
+                } else {
+                    bestGas.text = "ÁLCOOL"
                 }
             }
         }
