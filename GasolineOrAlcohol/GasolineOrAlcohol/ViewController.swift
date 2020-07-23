@@ -10,9 +10,9 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    @IBOutlet weak var gasolinePrice: UITextField!
+    @IBOutlet weak var gasolinePriceField: UITextField!
     
-    @IBOutlet weak var alcoholPrice: UITextField!
+    @IBOutlet weak var alcoholPriceField: UITextField!
     
     @IBOutlet weak var bestGas: UILabel!
     
@@ -25,8 +25,8 @@ class ViewController: UIViewController {
         bestGas.text = calculateBestGas()
     }
     
-    func validateFields() -> Bool {
-        return !gasolinePrice.text!.isEmpty || !alcoholPrice.text!.isEmpty
+    func validateFields(gasolinePrice: String, alcoholPrice: String) -> Bool {
+        
     }
     
     func calculateBestGas() -> String {
