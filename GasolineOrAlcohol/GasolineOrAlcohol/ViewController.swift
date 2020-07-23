@@ -22,11 +22,37 @@ class ViewController: UIViewController {
     }
 
     @IBAction func calculate(_ sender: Any) {
-        bestGas.text = calculateBestGas()
+        
+        let isValid = self.validateFields(gasolinePrice: gasolinePriceField, alcoholPrice: alcoholPriceField);
+        
+        if (isValid) {
+            
+        
+        } else {
+            
+        }
+    }
+    
+    func calculateBestGas(gasolinePrice: String, alcoholPrice: String) -> Bool {
+        if let gasolineValue = Double(gasolinePrice) {
+            if let alcoholValue = Double(alcoholPrice) {
+                let value = alcoholValue / gasolineValue
+                if (value >= 0.7) {
+                    
+                }
+            }
+        }
     }
     
     func validateFields(gasolinePrice: String, alcoholPrice: String) -> Bool {
+        var isValid = true
         
+        if (gasolinePrice.isEmpty) {
+            isValid = false
+        } else if (alcoholPrice.isEmpty) {
+            isValid = false
+        }
+        return isValid
     }
     
     func calculateBestGas() -> String {
