@@ -10,25 +10,27 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var alcoholPriceField: UITextField!
+    
     @IBOutlet weak var gasolinePriceField: UITextField!
     
-    @IBOutlet weak var alcoholPriceField: UITextField!
+    @IBOutlet weak var calculateButton: UIButton!
     
     @IBOutlet weak var bestGas: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        calculateButton.self.c
     }
 
     @IBAction func calculate(_ sender: Any) {
         
         if let gasolinePrice = gasolinePriceField.text {
             if let alcoholPrice = alcoholPriceField.text {
-                let isValid = validateFields(gasolinePrice: gasolinePrice, alcoholPrice: alcoholPrice);
+                let isValid = self.validateFields(gasolinePrice: gasolinePrice, alcoholPrice: alcoholPrice);
                 
                 if (isValid) {
-                    calculateBestGas(gasolinePrice: gasolinePrice, alcoholPrice: alcoholPrice)
+                    self.calculateBestGas(gasolinePrice: gasolinePrice, alcoholPrice: alcoholPrice)
                 } else {
                     bestGas.text = "INSIRA OS PREÇOS"
                 }
@@ -36,7 +38,7 @@ class ViewController: UIViewController {
         }
     }
     
-    func calculateBestGas(gasolinePrice: String, alcoholPrice: String) -> Bool {
+    func calculateBestGas(gasolinePrice: String, alcoholPrice: String) {
         if let gasolineValue = Double(gasolinePrice) {
             if let alcoholValue = Double(alcoholPrice) {
                 let value = alcoholValue / gasolineValue
@@ -58,11 +60,6 @@ class ViewController: UIViewController {
             isValid = false
         }
         return isValid
-    }
-    
-    func calculateBestGas() -> String {
-        
-        return ""
     }
 }
 
