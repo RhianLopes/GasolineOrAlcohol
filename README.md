@@ -1,6 +1,6 @@
 # Gasoline Or Alcohol
 
-. The goal with this app is to learn the development of IOS.
+Gasoline or alcohol is an application to calculate if it is better to fill your car with gasoline or alcohol, based on the price of fuels. The goal with this app is to learn the development of IOS.
 
 This app was built with the [IOS 12 Development course](https://www.udemy.com/course/curso-desenvolvimento-ios/), at [Udemy](https://www.udemy.com/), by instructor [Jamilton Damasceno](https://www.udemy.com/user/jamiltondamasceno/). This is my first IOS app and my first contact with [Swift](https://developer.apple.com/swift/), I hope you like it 🙂.
 
