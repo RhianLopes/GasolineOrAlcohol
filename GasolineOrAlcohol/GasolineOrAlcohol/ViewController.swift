@@ -20,7 +20,9 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        calculateButton.self.c
+        calculateButton.layer.cornerRadius = 10
+        bestGas.layer.masksToBounds = true
+        bestGas.layer.cornerRadius = 10
     }
 
     @IBAction func calculate(_ sender: Any) {
