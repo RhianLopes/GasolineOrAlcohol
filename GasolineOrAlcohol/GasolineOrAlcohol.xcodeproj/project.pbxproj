@@ -12,6 +12,7 @@
 		F12F4DB024C914B000731834 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F12F4DAE24C914B000731834 /* Main.storyboard */; };
 		F12F4DB224C914B100731834 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F12F4DB124C914B100731834 /* Assets.xcassets */; };
 		F12F4DB524C914B100731834 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F12F4DB324C914B100731834 /* LaunchScreen.storyboard */; };
+		F1D55B8A24CA64B800F81C7C /* gasolina-logo-120x120.png in Resources */ = {isa = PBXBuildFile; fileRef = F1D55B8924CA64B800F81C7C /* gasolina-logo-120x120.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		F12F4DB124C914B100731834 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F12F4DB424C914B100731834 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F12F4DB624C914B100731834 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F1D55B8924CA64B800F81C7C /* gasolina-logo-120x120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gasolina-logo-120x120.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 				F12F4DAA24C914B000731834 /* AppDelegate.swift */,
 				F12F4DAC24C914B000731834 /* ViewController.swift */,
 				F12F4DAE24C914B000731834 /* Main.storyboard */,
+				F1D55B8924CA64B800F81C7C /* gasolina-logo-120x120.png */,
 				F12F4DB124C914B100731834 /* Assets.xcassets */,
 				F12F4DB324C914B100731834 /* LaunchScreen.storyboard */,
 				F12F4DB624C914B100731834 /* Info.plist */,
@@ -122,6 +125,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1D55B8A24CA64B800F81C7C /* gasolina-logo-120x120.png in Resources */,
 				F12F4DB524C914B100731834 /* LaunchScreen.storyboard in Resources */,
 				F12F4DB224C914B100731834 /* Assets.xcassets in Resources */,
 				F12F4DB024C914B000731834 /* Main.storyboard in Resources */,
