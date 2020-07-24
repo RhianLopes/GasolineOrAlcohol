@@ -1,4 +1,4 @@
-# Gasoline Or Alcohol
+# :fuelpump: Gasoline Or Alcohol
 
 Gasoline or alcohol is an application to calculate if it is better to fill your car with gasoline or alcohol, based on the price of fuels. The goal with this app is to learn the development of IOS.
 
